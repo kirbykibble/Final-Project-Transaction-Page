@@ -109,6 +109,7 @@ input {
 	transition: all ease 0.3s
 
 }
+
 #outer {
 	width: 80%;
 	margin: 0 auto;
@@ -156,4 +157,27 @@ button:hover {
 	margin: 1%;
 	height: 2vw;
 	font-size: 1.5vw;
+}
+
+/*FINAL PAGE*/
+#bottom2 {
+	width: 300vw;
+	display: flex;
+	transition: all ease 0.3s
+}
+#prog1Final, #prog2Final, #prog3Final {
+	background-color: #ffa834;
+}
+#arrow1Final, #arrow2Final, #arrow3Final {
+	color: #ffa834;
+}
+#finishHeader {
+	font-size: 4vw;
+	padding: 1vw;
+	padding-left: 10vw;
+}
+#finishPara {
+	font-size: 2vw;
+	padding: 1vw;
+	padding-left: 10vw;
 }

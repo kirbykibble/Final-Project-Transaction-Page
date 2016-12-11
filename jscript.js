@@ -42,6 +42,7 @@ function page2() {
 	buttons.style.marginTop = "0";
 	backBut.disabled = false;
 	nextBut.innerHTML = "Next Step";
+	nextBut.setAttribute("onclick", "next()");
 	
 	prog1.style.backgroundColor = "#ffa834";
 	prog2.style.backgroundColor = "#ffd8ad";
@@ -53,6 +54,7 @@ function page3() {
 	movement.style.marginLeft = "-201.5vw";
 	buttons.style.marginTop = "-20vw";
 	nextBut.innerHTML = "Confim Order";
+	nextBut.setAttribute("onclick", "endPage()");
 	
 	prog1.style.backgroundColor = "#ffa834";
 	prog2.style.backgroundColor = "#ffa834";
@@ -64,6 +66,10 @@ function page3() {
 	creditNum = cardNum.value.slice(12,16);
 	overviewInfo.innerHTML = "Name: " + userName + "<br>Card Ending in: " + creditNum;
 	
+}
+
+function endPage() {
+	window.location.href = "IndexFinal.html";
 }
 
 function check() {
@@ -101,6 +107,15 @@ function back() {
 	}
 }
 
+function cancel() {
+	userConfirm = confirm("Are you sure you want to leave this page?");
+	if (userConfirm === true) {
+		window.location.href = 'http://i3.kym-cdn.com/photos/images/original/000/799/689/749.gif';
+	}
+}
+function finish() {
+	window.location.href = "http://i3.kym-cdn.com/photos/images/original/000/799/689/749.gif";
+}
 function next() {
 	if (curpage === 0){
 		curpage += 1;
