@@ -51,7 +51,7 @@ function page2() {
 }
 function page3() {
 	movement.style.marginLeft = "-201.5vw";
-	buttons.style.marginTop = "-25vw";
+	buttons.style.marginTop = "-20vw";
 	nextBut.innerHTML = "Confim Order";
 	
 	prog1.style.backgroundColor = "#ffa834";
